@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Title -->
+	<title>CBS Dahboard</title>
+
+
+
+	<!-- Favicon -->
+	<link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Tabler Icon CSS -->
+	<link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Color Picker CSS -->
+	<link rel="stylesheet" href="assets/plugins/flatpickr/flatpickr.min.css">
+	<link rel="stylesheet" href="assets/plugins/%40simonwep/pickr/themes/nano.min.css">
+
+
+	<!-- Daterangepicker CSS -->
+	<link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker.css">
+
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+	<!-- Bootstrap Tagsinput CSS -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+
+	<!-- Datetimepicker CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<div class="preloader">
+			<span class="loader"></span>
+		</div>
+
+		<!-- Header -->
+		<div class="header">
+
+			<!-- Logo -->
+			<div class="header-left active">
+				<a href="index-2.html" class="logo logo-normal">
+                    <img src="assets/logo.png" alt="Logo">
+                    <img src="assets/software logo.png" class="white-logo" alt="Logo">
+                </a>
+				<a href="index-2.html" class="logo-small">
+					<img src="assets/img/logo-small.svg" alt="Logo">
+				</a>
+				<a id="toggle_btn" href="javascript:void(0);">
+					<i class="ti ti-arrow-bar-to-left"></i>
+				</a>
+			</div>
+			<!-- /Logo -->
+
+			<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+				<span class="bar-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</a>
+
+			<div class="header-user">
+				<ul class="nav user-menu">
+					
+					<!-- Search -->
+					<li class="nav-item nav-search-inputs me-auto">
+					</li>
+					<!-- /Search -->
+
+				
+
+					<!-- Notifications -->
+					<li class="nav-item dropdown nav-item-box">
+						<a href="javascript:void(0);" class="nav-link" data-bs-toggle="dropdown">
+							<i class="ti ti-bell"></i>
+							<span class="badge rounded-pill">13</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end notification-dropdown">
+							<div class="topnav-dropdown-header">
+								<h4 class="notification-title">Notifications</h4>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img src="assets/img/profiles/avatar-02.jpg" alt="Profile">
+													<span class="badge badge-info rounded-pill"></span>
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details">Ray Arnold left 6 comments on Isla Nublar SOC2 compliance report</p>
+													<p class="noti-time">Last Wednesday at 9:42 am</p>
+												</div>
+											</div>
+										</a>
+									</li>
+					
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="activities.html" class="view-link">View all</a>
+								<a href="javascript:void(0);" class="clear-link">Clear all</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+
+					<!-- Profile Dropdown -->
+					<li class="nav-item dropdown has-arrow main-drop">
+						<a href="javascript:void(0);" class="nav-link userset" data-bs-toggle="dropdown">
+							<span class="user-info">
+								<span class="user-letter">
+									<img src="assets/img/profiles/profile.jpeg" alt="Profile">
+								</span>
+								<span class="badge badge-success rounded-pill"></span>
+							</span>
+						</a>
+						<div class="dropdown-menu menu-drop-user">
+							<div class="profilename">
+								<a class="dropdown-item" href="index-2.html">
+									<i class="ti ti-layout-2"></i> Dashboard
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="ti ti-user-pin"></i> My Profile
+								</a>
+								<a class="dropdown-item" href="login.html">
+									<i class="ti ti-lock"></i> Logout
+								</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Profile Dropdown -->
+
+				</ul>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div class="dropdown mobile-user-menu">
+				<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="index-2.html">
+						<i class="ti ti-layout-2"></i> Dashboard
+					</a>
+					<a class="dropdown-item" href="profile.html">
+						<i class="ti ti-user-pin"></i> My Profile
+					</a>
+					<a class="dropdown-item" href="login.html">
+						<i class="ti ti-lock"></i> Logout
+					</a>
+				</div>
+			</div>
+			<!-- /Mobile Menu -->
+
+		</div>
+		<!-- /Header -->
+
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<div class="modern-profile p-3 pb-0">
+				
+				<div class="sidebar-nav mb-3">
+					<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent"
+						role="tablist">
+						<li class="nav-item"><a class="nav-link active border-0" href="#">Menu</a></li>
+						<li class="nav-item"><a class="nav-link border-0" href="chat.html">Chats</a></li>
+						<li class="nav-item"><a class="nav-link border-0" href="email.html">Inbox</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-header p-3 pb-0 pt-2">
+				
+				<div class="d-flex align-items-center justify-content-between menu-item mb-3">
+					
+					
+					<div class="me-3 notification-item">
+						<a href="activities.html" class="btn btn-icon border btn-menubar position-relative me-1">
+							<i class="ti ti-bell"></i>
+							<span class="notification-status-dot"></span>
+						</a>
+					</div>
+					<div class="me-0">
+						<a href="email.html" class="btn btn-icon border btn-menubar">
+							<i class="ti ti-message"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="clinicdropdown">
+							<a href="profile.html">
+								<img src="assets/img/profiles/profile.jpeg" class="img-fluid" alt="Profile">
+								<div class="user-names">
+									<h5>Olaniyan Wisdom</h5>
+									<h6>Tech Lead</h6>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h6 class="submenu-hdr">Main Menu</h6>
+							<ul>
+								<li class="submenu"><a href="dashboard.html"><i class="ti ti-layout-2"></i><span>Dashboard</span></a>
+									
+								</li>
+								<li class="submenu">
+									<a href="#" class="active subdrop"><i class="ti  ti-report-money"></i><span>Payment Report</span><span class="menu-arrow"></span></a>
+									<ul>
+										<li><a href="queued-report.html">Queued Report</a></li>
+										<li><a href="success-report.html">Success Report</a></li>
+										<li><a href="failed-report.html">Failed Report</a></li>
+									</ul>
+								</li>
+								<li class="submenu">
+									<a href="#"><i class="ti ti-user-star"></i><span>Balance Transfer</span><span class="menu-arrow"></span></a>
+									<ul>
+										<li><a href="pending.html" class="active">Pending Transfer</a></li>
+										<li><a href="success-transfer.html">Success Transfer</a></li>
+										<li><a href="failed-transfer.html">Failed Transfer</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>
+									<a href="invioce.html">
+										<i class="ti ti-file-invoice"></i><span>Invoice Report</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="submenu">
+									<a href="javascript:void(0);"><i class="ti ti-file-invoice"></i><span>Verify Transaction</span><span class="menu-arrow"></span></a>
+									<ul>
+										<li><a href="Partner.html">Partner Transaction</a></li>
+										<li><a href="get-transaction.html">Get transaction Status</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					
+						<li>
+							<ul>
+								<li class="submenu">
+									<a href="javascript:void(0);"><i class="ti ti-file-invoice"></i><span>System Control</span><span class="menu-arrow"></span></a>
+									<ul>
+										<li><a href="control-dashboard.html">Control Dashbaord</a></li>
+										<li><a href="manage-bank.html">Manage Banks</a></li>
+										<li><a href="manage-mdas.html">Manage MDAs</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="submenu">
+									<a href="javascript:void(0);"><i class="ti ti-map-pin-pin"></i><span>Admin</span><span class="menu-arrow"></span></a>
+									<ul>
+										<li><a href="create-user.html">Create Users</a></li>
+										<li><a href="view-user.html">View Users</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Sidebar -->
+
+
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="content">
+					<!-- Page Header -->
+				<div class="page-header">
+					<div class="row">
+						<div class="col">
+							<h3 class="page-title">Queued Transaction Report</h3>
+						</div>
+                        <div class="col-8 text-end">
+                            <div
+											class="d-flex align-items-center flex-wrap row-gap-2 justify-content-sm-end">
+											<div class="dropdown me-2">
+												<a href="javascript:void(0);" class="dropdown-toggle"
+													data-bs-toggle="dropdown"><i
+														class="ti ti-package-export me-2"></i>Export</a>
+												<div class="dropdown-menu  dropdown-menu-end">
+													<ul>
+														<li>
+															<a href="javascript:void(0);" class="dropdown-item"><i
+																	class="ti ti-file-type-pdf text-danger me-1"></i>Export
+																as PDF</a>
+														</li>
+														<li>
+															<a href="javascript:void(0);" class="dropdown-item"><i
+																	class="ti ti-file-type-xls text-green me-1"></i>Export
+																as Excel </a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<a href="javascript:void(0);" class="btn btn-primary"
+												data-bs-toggle="offcanvas" data-bs-target=""><i
+													class="ti ti-square-rounded-plus me-2"></i>Repush</a>
+										</div>
+                        </div>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+                <div class="row">
+					<div class="col-xl-6">
+						<div class="card">
+							<div class="card-header justify-content-between">
+								<div class="card-title">
+									Filter
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-6 mb-3">
+										<label class="form-label">Per Page</label>
+										<select id="" class="form-select">
+                                            <option selected="">1000</option>
+                                            <option>2000</option>
+                                        </select>
+									</div>
+									<div class="col-md-6 mb-3">
+										<label class="form-label">Date From</label>
+										<input type="date" class="form-control">
+									</div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Date To</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+									
+									<div class="col-md-6 mb-3">
+                                        <label class="form-label">Payment Channel</label>
+										<select id="" class="form-select">
+                                            <option selected="">Payment Channel</option>
+                                            <option>...</option>
+                                        </select>
+									</div>
+
+                                   
+                                    <div class="d-flex align-items-center gap-2 mt-3">
+                                        <button type="submit" class="btn btn-dark-outline">Clear Filter</button>
+                                        <button type="submit" class="btn btn-dark">Submit</button>
+                                    </div>
+							
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+                    
+                    
+                    <div class="col-xl-6 d-none d-xl-block">
+						
+                            <svg width="448" height="309" viewBox="0 0 448 309" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="448" height="309" fill="url(#pattern0_14_137)"/>
+                                <defs>
+                                <pattern id="pattern0_14_137" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_14_137" transform="matrix(0.0019484 0 0 0.00282486 0.110321 0)"/>
+                                </pattern>
+                                <image id="image0_14_137" width="400" height="354" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                                </svg>
+                                </div>
+
+					
+				</div>
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <!-- Search -->
+                        <div class="row align-items-center">
+                            <div class="col-sm-4">
+                                <div class="icon-form mb-3 mb-sm-0">
+                                    <span class="form-icon"><i class="ti ti-search"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search Transactions">
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div
+                                    class="d-flex align-items-center flex-wrap row-gap-2 justify-content-sm-end">
+                                  
+                                    <h3 class="text-dark">Total Transaction Amount: ₦53,000.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Search -->
+                    </div>
+                    <div class="card-body">
+
+                        <!-- Projects List -->
+                        <div class="table-responsive custom-table">
+                            <table class="table" id="contracts-list">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th class="no-sort">
+                                            <label class="checkboxs"><input type="checkbox" id="select-all"><span class="checkmarks"></span></label>
+                                        </th>
+                                        <th>S/N</th>
+                                        <th>Payer Name</th>
+                                        <th>MDA ID</th>
+                                        <th>Transaction ID</th>
+                                        <th>Request ID</th>
+                                        <th>Invoice ID</th>
+                                        <th>MDA Module</th>
+                                        <th>Payment Gateway</th>
+                                        <th>Procedure Channel</th>
+                                        <th>Transaction Amount</th>
+                                        <th>Transaction Date</th>
+                                        <th class="text-end">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>MDA-1001</td>
+                                        <td>TXN-2023-001</td>
+                                        <td>REQ-23001</td>
+                                        <td>INV-23001</td>
+                                        <td>Tax Collection</td>
+                                        <td>Paystack</td>
+                                        <td>Web Portal</td>
+                                        <td>₦25,000.00</td>
+                                        <td>2023-05-15 10:30</td>
+                                        <td class="text-end"><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>2</td>
+                                        <td>Jane Smith</td>
+                                        <td>MDA-1002</td>
+                                        <td>TXN-2023-002</td>
+                                        <td>REQ-23002</td>
+                                        <td>INV-23002</td>
+                                        <td>Business Registration</td>
+                                        <td>Flutterwave</td>
+                                        <td>Mobile App</td>
+                                        <td>₦50,000.00</td>
+                                        <td>2023-05-16 14:15</td>
+                                        <td class="text-end"><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>3</td>
+                                        <td>Michael Johnson</td>
+                                        <td>MDA-1003</td>
+                                        <td>TXN-2023-003</td>
+                                        <td>REQ-23003</td>
+                                        <td>INV-23003</td>
+                                        <td>Land Use Charge</td>
+                                        <td>Interswitch</td>
+                                        <td>Bank Branch</td>
+                                        <td>₦75,000.00</td>
+                                        <td>2023-05-17 09:45</td>
+                                        <td class="text-end"><span class="badge bg-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>4</td>
+                                        <td>Sarah Williams</td>
+                                        <td>MDA-1004</td>
+                                        <td>TXN-2023-004</td>
+                                        <td>REQ-23004</td>
+                                        <td>INV-23004</td>
+                                        <td>Building Permit</td>
+                                        <td>Remita</td>
+                                        <td>USSD</td>
+                                        <td>₦120,000.00</td>
+                                        <td>2023-05-18 16:20</td>
+                                        <td class="text-end"><span class="badge bg-danger">Failed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>5</td>
+                                        <td>David Brown</td>
+                                        <td>MDA-1005</td>
+                                        <td>TXN-2023-005</td>
+                                        <td>REQ-23005</td>
+                                        <td>INV-23005</td>
+                                        <td>Vehicle License</td>
+                                        <td>Paystack</td>
+                                        <td>Web Portal</td>
+                                        <td>₦15,000.00</td>
+                                        <td>2023-05-19 11:10</td>
+                                        <td class="text-end"><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>6</td>
+                                        <td>Emily Davis</td>
+                                        <td>MDA-1006</td>
+                                        <td>TXN-2023-006</td>
+                                        <td>REQ-23006</td>
+                                        <td>INV-23006</td>
+                                        <td>Market Permit</td>
+                                        <td>Flutterwave</td>
+                                        <td>Mobile App</td>
+                                        <td>₦30,000.00</td>
+                                        <td>2023-05-20 13:25</td>
+                                        <td class="text-end"><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>7</td>
+                                        <td>Robert Wilson</td>
+                                        <td>MDA-1007</td>
+                                        <td>TXN-2023-007</td>
+                                        <td>REQ-23007</td>
+                                        <td>INV-23007</td>
+                                        <td>Environmental Fee</td>
+                                        <td>Interswitch</td>
+                                        <td>Bank Branch</td>
+                                        <td>₦45,000.00</td>
+                                        <td>2023-05-21 15:40</td>
+                                        <td class="text-end"><span class="badge bg-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>8</td>
+                                        <td>Jennifer Martinez</td>
+                                        <td>MDA-1008</td>
+                                        <td>TXN-2023-008</td>
+                                        <td>REQ-23008</td>
+                                        <td>INV-23008</td>
+                                        <td>Health Certificate</td>
+                                        <td>Remita</td>
+                                        <td>USSD</td>
+                                        <td>₦20,000.00</td>
+                                        <td>2023-05-22 10:05</td>
+                                        <td class="text-end"><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>9</td>
+                                        <td>Thomas Anderson</td>
+                                        <td>MDA-1009</td>
+                                        <td>TXN-2023-009</td>
+                                        <td>REQ-23009</td>
+                                        <td>INV-23009</td>
+                                        <td>Signage Permit</td>
+                                        <td>Paystack</td>
+                                        <td>Web Portal</td>
+                                        <td>₦60,000.00</td>
+                                        <td>2023-05-23 14:50</td>
+                                        <td class="text-end"><span class="badge bg-danger">Failed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkboxs"><input type="checkbox"><span class="checkmarks"></span></label>
+                                        </td>
+                                        <td>10</td>
+                                        <td>Lisa Taylor</td>
+                                        <td>MDA-1010</td>
+                                        <td>TXN-2023-010</td>
+                                        <td>REQ-23010</td>
+                                        <td>INV-23010</td>
+                                        <td>Waste Disposal</td>
+                                        <td>Flutterwave</td>
+                                        <td>Mobile App</td>
+                                        <td>₦35,000.00</td>
+                                        <td>2023-05-24 09:30</td>
+                                        <td class="text-end"><span class="badge bg-success">Completed</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="datatable-length"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="datatable-paginate"></div>
+                            </div>
+                        </div>
+                        <!-- /Projects List -->
+
+                    </div>
+                </div>
+
+
+
+
+
+			</div>
+		</div>
+		<!-- /Page Wrapper -->
+
+
+
+
+	</div>
+	<!-- /Main Wrapper -->
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.7.1.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/bootstrap.bundle.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Feather Icon JS -->
+	<script src="assets/js/feather.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="assets/js/jquery.slimscroll.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Datatable JS -->
+	<script src="assets/js/jquery.dataTables.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+	<script src="assets/js/dataTables.bootstrap5.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Daterangepicker JS -->
+	<script src="assets/js/moment.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+	<script src="assets/plugins/daterangepicker/daterangepicker.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Datetimepicker JS -->
+	<script src="assets/js/bootstrap-datetimepicker.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Bootstrap Tagsinput JS -->
+	<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Apexchart JS -->
+	<script src="assets/plugins/apexchart/apexcharts.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+	<script src="assets/plugins/apexchart/chart-data.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Chart JS -->
+	<script src="assets/plugins/peity/jquery.peity.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+	<script src="assets/plugins/peity/chart-data.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+	<!-- Select2 JS -->
+	<script src="assets/plugins/select2/js/select2.min.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+
+
+
+
+
+	<script src="assets/js/script.js" type="57e0fdbd8077d81fa8e8f83d-text/javascript"></script>
+
+<script src="assets/js/rocket-loader.min.js" data-cf-settings="57e0fdbd8077d81fa8e8f83d-|49" defer></script>
+
+</body>
+
+
+
+</html>
